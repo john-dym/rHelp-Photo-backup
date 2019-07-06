@@ -20,5 +20,5 @@ for file in os.listdir('.'):
     oldFile = os.path.join(dirs,file)
     fileName, ext = os.path.splitext(file)
     newFile = os.path.join(newMain,fileName) + ' ' + date + ext
-    if os.path.isfile(oldFile):
-        os.replace(oldFile,newFile)
+    if os.path.isfile(oldFile): #This was necessary since os.listdir() returns both directories and files. Though if there are any folders in the source directory it will end up ignoring them. Could be a issue if folders are commonly used.
+        os.replace(oldFile,newFile) #os.replace() will move the files from the source to destination. No file copying. 
