@@ -18,4 +18,5 @@ Proper formatting - https://dpaste.de/RtQw
 
 My reply
 I didn't understand what your question was but using your code I came up with this. It created a new directory in main "06.07.2019" then moves files from dirs "H:\DCIM" and changes the name for example Pictures 001.jpg becomes Pictures 001 06.07.2019.jpg. Now that i think about it if you put the pictures in a dated name folder i guess u dont have to change the file name. Oh well this was a learning experience for me. For my testing i was using blank text files.
+
 [Code Block]
